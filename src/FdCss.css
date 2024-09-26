@@ -1,0 +1,151 @@
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.height-adjust {
+    height: 90vh;
+}
+.height-adjust-middle {
+    height: 83vh;
+}
+.dropSection {
+    height: 80vh; 
+    overflow: auto;
+    padding-top: 10px;
+}
+.btn-save {
+    background: mediumslateblue;
+    font-weight: 500;
+    color: white;
+    border-radius: 25px;
+}
+.btn-clear {
+    border-radius: 25px;
+    background: slategrey;
+    color: #fff;
+    font-weight: 500;
+}
+.dropSection div {
+    text-align: left;
+    box-shadow: 0px 0px 3px #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;    
+    background: #a3a3ff;
+    font-weight: 500;    
+}
+.listDesign div {
+    text-align: left;
+    box-shadow: 0px 0px 3px #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;    
+    background: lavender;
+}
+.listDesign div:hover {
+    background: #a3a3ff;
+    box-shadow: 0px 0px 3px #e6e6fa;
+    cursor: move;
+    font-weight: 500;    
+}
+.card {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid lavender;
+}
+.card-lavender {    
+    background: lavender;
+}
+.form-group {
+    text-align: left;
+}
+.field-selected {
+    background: lavender !important;
+    border: 2px solid #a3a3ff;
+}
+.preview-field input {
+    border: 1px solid mediumslateblue;
+}
+.custom-checkbox {
+    width: 20px;  
+    height: 20px; 
+    border: 2px solid mediumslateblue; 
+    border-radius: 4px;  
+    appearance: none; 
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: mediumslateblue; 
+    border-color: mediumslateblue; 
+    position: relative;
+}
+
+.custom-checkbox:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: white;
+    font-size: 14px;
+}
+
+.Modal button.btn.btn-close {
+    background: tomato;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.Modal {
+    width: 50%; 
+    max-width: 500px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow-y: auto;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    
+    .height-adjust {
+        height: auto;
+    }
+    .height-adjust-middle {
+        height: auto;
+    }
+    .dropSection {
+        height: auto; 
+    }
+    .Modal {
+        width: 80%; 
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Modal {
+        width: 90%; 
+        padding: 10px;
+    }
+}
+
